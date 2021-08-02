@@ -6294,6 +6294,10 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 	border: .125rem solid #dee2e6!important;
 }
 
+.border-3 {
+    border-width:.3rem !important;
+}
+
 .border-top {
 	border-top: .125rem solid #dee2e6!important;
 }
