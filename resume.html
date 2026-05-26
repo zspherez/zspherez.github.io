@@ -8,7 +8,7 @@
 <!-- Counterscale: fire the pageview beacon before navigating to the PDF.
      The tracker uses sendBeacon / fetch-keepalive, so the in-flight request
      survives the navigation. -->
-<script async src="https://counterscale.zsphere.workers.dev/tracker.js" data-site-id="rehde-rs"></script>
+<script async src="https://analytics.rehde.rs/tracker.js" data-site-id="rehde-rs"></script>
 <script>
   // Give the tracker a beat to load and dispatch the beacon, then redirect.
   setTimeout(() => location.replace('./rehders_resume.pdf'), 250);
