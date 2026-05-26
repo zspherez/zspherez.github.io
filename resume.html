@@ -3,11 +3,20 @@
 <head>
 <meta charset="utf-8">
 <title>Josh Rehders Resume</title>
-<meta http-equiv="refresh" content="0; url=./rehders_resume.pdf">
+<meta name="robots" content="noindex">
 <link rel="canonical" href="./rehders_resume.pdf">
-<script>location.replace('./rehders_resume.pdf');</script>
+<!-- Counterscale: fire the pageview beacon before navigating to the PDF.
+     The tracker uses sendBeacon / fetch-keepalive, so the in-flight request
+     survives the navigation. -->
+<script async src="https://counterscale.zsphere.workers.dev/tracker.js" data-site-id="rehde-rs"></script>
+<script>
+  // Give the tracker a beat to load and dispatch the beacon, then redirect.
+  setTimeout(() => location.replace('./rehders_resume.pdf'), 250);
+</script>
+<!-- Fallback for users with JS disabled (no tracking in that case, but redirect still works). -->
+<noscript><meta http-equiv="refresh" content="0; url=./rehders_resume.pdf"></noscript>
 </head>
 <body>
-<p>redirecting to <a href="./rehders_resume.pdf">rehders_resume.pdf</a>…</p>
+<p>Redirecting to <a href="./rehders_resume.pdf">rehders_resume.pdf</a>…</p>
 </body>
 </html>
